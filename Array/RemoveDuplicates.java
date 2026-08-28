@@ -33,7 +33,8 @@ public class RemoveDuplicates {
         }
 
         int newLength = removeDuplicates(arr);
-
+ // print statment
+        
         System.out.println("Array after removing duplicates:");
         for (int i = 0; i < newLength; i++) {
             System.out.print(arr[i] + " ");
