@@ -1,22 +1,26 @@
 import java.util.Scanner;
-public class Factorial {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+       
+     public class factorial{
 
-        System.out.print("Enter a number: ");
-        int n = sc.nextInt();
+           static int facto(int n){
+                int fact =1;
 
-        long factorial = 1;
-
-        if (n < 0) {
-            System.out.println("Factorial is not defined for negative numbers.");
-        } else {
-            for (int i = 1; i <= n; i++) {
-                factorial *= i;
+               for(int i=1; i<=n; i++){              
+                    fact = fact*i;
+                   
+               }
+               return fact;
             }
-            System.out.println("Factorial of " + n + " is: " + factorial);
-        }
 
-        sc.close();
-    }
-}
+            public static void main(String[] args) {
+                   
+               Scanner sc = new Scanner(System.in); 
+
+               System.out.println("Enter a Number for factorial :  ");
+               int n = sc.nextInt();
+
+               System.out.println("Factorial of a given number is  :  "+facto(n));
+
+               sc.close();
+            }
+     }
