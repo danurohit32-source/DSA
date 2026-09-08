@@ -20,9 +20,12 @@ public class prime {
                System.out.println("Number is not a prime number .");
              return;
              }
-         }    
+            }
+        
     
      System.out.println("Number is a prime Number . ");     
+            
      sc.close();
     }
 }
+

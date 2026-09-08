@@ -15,7 +15,7 @@ public class palindrome {
          while(n!=0){
           
             int digit = n % 10;
-             reverse = reverse * 10 + digit;
+             reverse = reverse * 10 + digit; /// ya pr 10 se multiply isi liye kiya hai taki vo digit apni position  me  aye ones  tens or hundred kisi bhi 
              n = n/10;  // number reverse krke check krenge ki original ke equal hai ki nhi 
          }
 
